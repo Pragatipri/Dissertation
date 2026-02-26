@@ -25,22 +25,31 @@ This project demonstrates how combining machine learning approaches can produce 
 ### Step 1 – Prophet Baseline Model
 
 Captures:
+
 Trend
+
 Yearly seasonality
+
 Change points
+
 Provides interpretable components
 
 ### Step 2 – Residual Extraction
 
 Residuals computed as:
+
 Residual = Actual Sales – Prophet Forecast
 
 ### Step 3 – XGBoost Residual Correction
 
 Trained on:
+
 Lag features
+
 Rolling statistics
+
 Time-based features
+
 Learns non-linear patterns missed by Prophet
 
 ### Final Forecast
@@ -49,20 +58,31 @@ Final Forecast = Prophet Prediction + XGBoost Residual Prediction
 ## Evaluation Metrics
 
 Models were evaluated using:
+
 RMSE (Root Mean Squared Error)
+
 MAE (Mean Absolute Error)
+
 MAPE (Mean Absolute Percentage Error)
+
+MPE (Mean Percentage Error)
 
 The hybrid model reduced RMSE by approximately 9%, demonstrating improved predictive stability.
 
 ## Key Experiments Conducted
 
 ARIMA vs SARIMA comparison
+
 Log transformation vs differencing
+
 ADF stationarity testing
+
 ACF/PACF lag selection
+
 Prophet and XGBoost hyperparameter tuning
+
 Multiple time splits were explored within each standalone model 
+
 Hybrid residual modelling
 
 ## Academic Context
@@ -70,9 +90,13 @@ Hybrid residual modelling
 This project was completed as part of the MSc Data Science programme at Kingston University.
 
 The research explores:
+
 Forecast model comparison
+
 Human vs machine decision limitations
+
 Bias reduction in financial planning
+
 Practical implementation of ML in retail environments
 
 ## Contact
@@ -80,4 +104,5 @@ Practical implementation of ML in retail environments
 If you’d like to discuss this project, collaboration opportunities, or retail forecasting applications:
 
 📧 pragati0228@gmail.com
+
 🔗 https://www.linkedin.com/in/pragati-priya/
