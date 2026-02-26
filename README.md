@@ -5,17 +5,23 @@ Author: Pragati Priya
 ## Project Overview 
 
 This dissertation presents the development of a hybrid retail sales forecasting model combining:
+
 Facebook Prophet (trend + seasonality modelling)
+
 XGBoost (residual error correction)
 
 The objective is to improve forecasting accuracy for retail financial planning by reducing bias, capturing structural changes, and modelling non-linear patterns that traditional statistical models fail to detect.
+
 The hybrid model achieved a ~9% improvement in RMSE compared to standalone baseline models.
 
 ## Business Motivation
 
 Retail financial planning relies heavily on accurate sales forecasts. However:
+
 Human forecasts are subject to cognitive bias (optimism bias, anchoring, overconfidence)
+
 Traditional time-series models struggle with non-linearity and regime changes
+
 Retail sales behaviour shifts due to promotions, seasonality, and market shocks
 
 This project demonstrates how combining machine learning approaches can produce more robust forecasts for decision-making.
